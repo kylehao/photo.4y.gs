@@ -12,8 +12,8 @@
       <div id="main">
         {% for image in site.images %}
         <article class="thumb">
-          <a href="{{site.baseurl}}/assets/images/fulls/{{ image.path | split: '/' | last | split: '.' | first }}.jpg" class="image">
-            <img src="{{site.baseurl}}/assets/images/thumbs/{{ image.path | split: '/' | last | split: '.' | first }}.jpg" alt="{{ image.title }}" />
+          <a href="https://cdn.jsdelivr.net/gh/kylehao/photo.4y.gs/photo/big/{{ image.path | split: '/' | last | split: '.' | first }}.jpg" class="image">
+            <img src="https://cdn.jsdelivr.net/gh/kylehao/photo.4y.gs/photo/small/{{ image.path | split: '/' | last | split: '.' | first }}.jpg" alt="{{ image.title }}" />
           </a>
           <h2>{{ image.title }}</h2>
           <p>{{ image.caption }}</p>
